@@ -1,0 +1,51 @@
+.app {
+  padding: 40px;
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+  }
+}
+
+.info {
+  padding: 18px 24px;
+  background: #fbf3dc;
+  width: 410px;
+  max-width: 100%;
+  .item {
+    line-height: 32px;
+  }
+}
+
+.box {
+  width: 410px;
+  padding-left: 20px;
+  display: flex;
+
+  input {
+    max-width: 190px;
+    margin-right: 12px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  label {
+    margin: 0;
+    line-height: 40px;
+  }
+}
+
+
+.radioBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-left: 20px;
+
+  label {
+    font-size: 16px;
+    color: #000;
+  }
+}

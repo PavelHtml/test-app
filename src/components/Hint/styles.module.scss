@@ -1,0 +1,55 @@
+.hint {
+  position: relative;
+  margin-left: 8px;
+  display: inline-block;
+  z-index: 10;
+
+  .hintIcon {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 18px;
+    color: #ccc;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .hintText {
+    display: none;
+    position: absolute;
+    background: #5e6cab;
+    color: #fff;
+    width: 248px;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 18px 12px;
+    top: calc(100% + 20px);
+    left: 50%;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -16px;
+      left: 0;
+      border: 8px solid transparent;
+      border-left: 8px solid #5e6cab;
+      border-bottom: 8px solid #5e6cab;
+    }
+
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &:hover {
+    .hintText {
+      display: block;
+    }
+  }
+}

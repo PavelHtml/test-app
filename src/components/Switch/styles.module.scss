@@ -1,0 +1,46 @@
+
+.switchBox {
+  display: flex;
+  align-items: center;
+  margin: 18px 20px;
+  .item {
+    color: #ccc;
+    &.active {
+      color: #000;
+    }
+  }
+
+  .switch {
+    height: 24px;
+    width: 38px;
+    position: relative;
+    background: #ccc;
+    transition: .3s;
+    border-radius: 20px;
+    margin: 0 12px;
+
+    input {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      bottom: 2px;
+      background: #fff;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      transition: .3s;
+    }
+
+    &.active {
+      background: #e4a750;
+      &::after {
+        left: 16px;
+      }
+    }
+  }
+}
